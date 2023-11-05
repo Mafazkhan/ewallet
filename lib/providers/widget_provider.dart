@@ -414,15 +414,18 @@ class WidgetProvider extends ChangeNotifier {
                           child: Padding(
                             padding: const EdgeInsets.symmetric(
                                 horizontal: 2, vertical: 2),
-                            child: ElevatedButton(
-                                style: ElevatedButton.styleFrom(
-                                    backgroundColor: kIconBgColor,
-                                    elevation: 0),
-                                onPressed: () {},
-                                child: Icon(
-                                  Icons.backspace_outlined,
-                                  color: Colors.black,
-                                )),
+                            child: Container(
+                              height: 40,
+                              child: ElevatedButton(
+                                  style: ElevatedButton.styleFrom(
+                                      backgroundColor: kIconBgColor,
+                                      elevation: 0),
+                                  onPressed: () {},
+                                  child: Icon(
+                                    Icons.backspace_outlined,
+                                    color: Colors.black,
+                                  )),
+                            ),
                           ),
                         ),
                       ],
